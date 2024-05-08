@@ -29,6 +29,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import DLE from "./pages/DLE";
+import Classique from "./pages/Classique";
+import Drapeau from "./pages/Drapeau";
 
 const App = () => {
   return (
@@ -37,6 +39,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/DLE" element={<DLE />} />
+        <Route path="/DLE/Classique" element={<Classique />} />
+        <Route path="/DLE/Drapeau" element={<Drapeau />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
